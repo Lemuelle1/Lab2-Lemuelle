@@ -73,31 +73,43 @@ class HomePage extends StatelessWidget {
 
     debugPrint('Screen width: $screenWidth dp');
 
+
+final List<Map<String, String>> items = [
+  {
+    'name': 'Laptop',
+    'description': 'A computer for programming',
+  },
+  {
+    'name': 'Smartphone',
+    'description': 'A device for mobile applications',
+  },
+  {
+    'name': 'Headphones',
+    'description': 'An audio listening device',
+  },
+];
     return Scaffold(
       appBar: AppBar(
         title: const Text('My First App'),
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: const [
-            Text(
-              'Hello, Lemuelle!',
-              style: TextStyle(
-                fontSize: 26,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-            SizedBox(height: 15),
-            Text(
-              'Welcome to my first Flutter application.',
-              style: TextStyle(fontSize: 16),
-            ),
-            SizedBox(height: 15),
-            ProfileCard(),
-          ],
+      body: ListView.builder(
+  padding: const EdgeInsets.all(16),
+  itemCount: items.length,
+  itemBuilder: (context, index) {
+    return Card(
+      margin: const EdgeInsets.only(bottom: 12),
+      child: ListTile(
+        leading: const Icon(
+          Icons.devices,
+          color: Colors.blue,
         ),
+        title: Text(items[index]['name']!),
+        subtitle: Text(items[index]['description']!),
+        trailing: const Icon(Icons.arrow_forward_ios),
       ),
+    );
+  },
+),
     );
   }
 }

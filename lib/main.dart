@@ -98,15 +98,19 @@ final List<Map<String, String>> items = [
   itemBuilder: (context, index) {
     return Card(
       margin: const EdgeInsets.only(bottom: 12),
-      child: ListTile(
-        leading: const Icon(
-          Icons.devices,
-          color: Colors.blue,
+      child: Row(
+        children: [
+          const Icon(Icons.person),
+          const SizedBox(width:8),
+          Expanded(
+            child:  Text(
+            'this is a very long txt that will cause an overflow'
+             'error on the screen .'
+            'we are deliberately creating this error '
+            'to learn how to fix flutter layout problems.'),
+         ),
+         ],
         ),
-        title: Text(items[index]['name']!),
-        subtitle: Text(items[index]['description']!),
-        trailing: const Icon(Icons.arrow_forward_ios),
-      ),
     );
   },
 ),

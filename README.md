@@ -1,110 +1,132 @@
-# Lab2-Lemuelle
-Dart and my first screen 
-
-Flutter Lab 1 – My First Flutter Application
+LAB 2 – Dart and Your First Screens
 
 1. Introduction
 
-This exercise was designed to introduce me to Flutter and mobile application development. The main objective was to set up a Flutter development environment, create my first Flutter application, understand the basic structure of a Flutter project, and run the application on an Android device.
+The purpose of this lab was to develop our understanding of Dart programming and Flutter application development. We were expected to practise basic Dart concepts, create Flutter widgets, understand layouts, debug errors, and build a static application screen.
 
-The exercise also introduced me to Visual Studio Code, Git, and GitHub for source code management and version control.
+2. Exercises and Accomplishments
 
-2. Objectives of the Exercise
+Exercise 1: Dart Functions and Named Parameters
 
-The main objectives were to:
+What was expected:
+Practise writing Dart functions and using named parameters.
 
-- Install and configure the Flutter SDK.
-- Set up Visual Studio Code for Flutter development.
-- Create a new Flutter project.
-- Understand and modify the "main.dart" file.
-- Use basic Flutter widgets such as "MaterialApp", "Scaffold", "AppBar", "Text", and "Column".
-- Use "MediaQuery" to obtain screen dimensions.
-- Use "debugPrint()" to display information in the debug console.
-- Run the application on an Android device.
-- Use Git and GitHub to track and share the project.
+What I accomplished:
+I practised creating functions and passing arguments using named parameters.
 
-3. What I Successfully Accomplished
+What I learned:
+I learned how to organize code into reusable functions and make function parameters clearer.
 
-Despite the challenges encountered, I successfully accomplished the main tasks of the exercise.
 
-My achievements include:
 
-- Successfully installed and configured the Flutter SDK.
-- Verified the Flutter installation.
-- Configured Visual Studio Code for Flutter development.
-- Created my first Flutter project named "my_first_app1".
-- Successfully retrieved project dependencies using "flutter pub get".
-- Modified the "main.dart" file to customize the application's interface.
-- Added a personalized greeting: "Hello, Lemuelle!"
-- Used "MediaQuery" to retrieve screen dimensions.
-- Used "debugPrint()" to display information during execution.
-- Configured my Google Pixel for USB debugging.
-- Used Git and GitHub to manage and push my project.
 
-Most importantly, I finally succeeded in running my first Flutter application.
-![running app on  the phone](screenshots/appOnPhone.png)
-![flutter doctor image](screenshots/flutterDoctorPic.png)
-4. Difficulties Encountered
 
-During the exercise, I encountered several difficulties:
+Exercise 2: Null Safety
 
-a. Hardware Limitation – My Personal Computer
+What was expected:
+Understand and practise Dart null safety.
 
-The very first challenge was related to my computer. Unfortunately, my personal laptop was not in good working condition, which prevented me from using it to complete the exercise.
+What I accomplished:
+I worked with nullable and non-nullable variables and learned how to handle values that might be null.
 
-As a result, I had to borrow my classmate's laptop to continue working.
+What I learned:
+I understood how null safety helps prevent errors caused by unexpected null values.
 
-b. GitHub Access and Collaboration
 
-Since I was using my classmate's laptop and his Visual Studio Code environment, I also faced a challenge with pushing my work to GitHub.
+''
+Exercise 3: Lists and Collection Methods
 
-To solve this problem, I had to add my classmate as a collaborator to my GitHub repository so that I could use his VS Code environment to push my project successfully.
+What was expected:
+Work with Dart lists using "where", "map", and "fold".
 
-This experience helped me understand GitHub collaboration and repository permissions.
+What I accomplished:
+I practised filtering, transforming, and combining list elements.
 
-c. Flutter SDK Configuration
+What I learned:
+I learned how to manipulate collections and process data efficiently.
 
-I initially experienced difficulties configuring the Flutter SDK and ensuring that the system could recognize Flutter commands correctly.
+Exercise 4: Classes and Asynchronous Programming
 
-d. Dependency Management
+What was expected:
+Practise object-oriented programming by creating a Product class, and understand asynchronous programming.
 
-I encountered issues with Flutter dependencies and unresolved imports in Visual Studio Code. I had to run "flutter pub get" and check the project configuration.
+What I accomplished:
+I worked with a class, constructor, getter, and methods. I also studied asynchronous programming concepts.
 
-e. Android Device Detection
+What I learned:
+I understood how classes organize data and behaviour, and how asynchronous operations work in Dart.
 
-Connecting my Google Pixel to the computer was another challenge. I had to enable Developer Options, activate USB Debugging, and authorize the computer to communicate with my phone.
+Exercise 5: Creating a ProfileCard Widget
 
-f. Gradle Build Errors
+What was expected:
+Create a ProfileCard widget in Flutter, run the application, change the seed colour, and commit the work.
 
-When I first attempted to run the application, the Android build process failed with a Gradle error:
+What I accomplished:
+I successfully created a ProfileCard displaying my name, course, and university. I also customized the application's seed colour.
 
-"Gradle task assembleDebug failed with exit code 1"
+What I learned:
+I learned how to create reusable Flutter widgets and customize an application's theme.
 
-I also encountered access permission and Flutter engine initialization errors. These required additional troubleshooting before I could successfully run the application.
+![my profile card](<screenshots/Screenshot 2026-11-23 120241.png>)
 
-5. Lessons Learned
+Exercise 6: Using ListView.builder
 
-This exercise taught me that software development involves more than writing code. It also requires access to appropriate hardware, proper configuration of development tools, dependency management, debugging, collaboration, and version control.
+What was expected:
+Replace the single ProfileCard with a list of three items using "ListView.builder".
 
-I improved my ability to:
+What I accomplished:
+I successfully implemented a scrollable list containing three items using "ListView.builder", "Card", and "ListTile".
 
-- Work with the Flutter framework.
-- Understand the structure of a Flutter project.
-- Identify and troubleshoot technical errors.
-- Connect a physical Android device for application testing.
-- Use Git and GitHub for version control.
-- Understand GitHub collaboration and repository permissions.
-- Adapt to unexpected situations and find alternative solutions.
-- Remain patient and persistent when facing technical challenges.
+What I learned:
+I learned how to display multiple items dynamically and use indexes to access list elements.
 
-6. Conclusion
+![the display of my items](<screenshots/Screenshot 2026-11-23 125956.png>)
 
-Although I encountered several challenges, starting with the failure of my personal laptop, I did not give up.
+Exercise 7: Layout Debugging with Expanded
 
-I had to adapt by using my classmate's computer, configuring the development environment, resolving GitHub access issues, and troubleshooting several technical errors.
+What was expected:
+Create a layout overflow intentionally using a long text inside a Row without Expanded, capture the error, and fix it using Expanded.
 
-Through persistence, collaboration, and practice, I finally succeeded in completing the exercise and running my first Flutter application.
+What I accomplished:
+I created a horizontal text overflow and corrected the layout by wrapping the text with the "Expanded" widget.
 
-This experience was an important first step in my journey toward becoming a mobile application developer. It taught me not only technical skills but also problem-solving, adaptability, and collaboration.
+What I learned:
+I learned how Flutter handles available space inside a Row and how Expanded helps prevent layout overflow.
 
-Exercise Status: Successfully Completed!
+Exercise 8: Flutter Inspector
+
+What was expected:
+Use Flutter Inspector to select a widget, examine its size and constraints, and take a screenshot.
+
+What I accomplished:
+I successfully connected Flutter DevTools, opened Flutter Inspector, explored the Widget Tree, and examined widget properties.
+
+What I learned:
+I learned how to inspect widgets, understand their dimensions, and examine layout constraints.
+
+![this was my output in the flutter inspector](<screenshots/Screenshot 2026-11-27 092934.png>)
+
+3. General Difficulties Encountered
+
+One of my main difficulties was working with a computer that was not functioning properly. I had to use my classmate's laptop to complete the exercises.
+
+I also experienced some difficulties understanding certain Dart and Flutter concepts, especially widget layouts, constraints, and debugging. With practice, testing, and guidance, I was able to overcome these challenges.
+
+I also learned how to use Git and GitHub to manage my project, create commits, resolve a README merge conflict, and push my work to a new repository.
+
+4. Overall Lessons Learned
+
+This lab improved my understanding of Dart programming and Flutter development. I gained practical experience in:
+
+- Dart functions and named parameters.
+- Null safety and collection methods.
+- Object-oriented programming.
+- Creating reusable Flutter widgets.
+- Building scrollable lists.
+- Managing layouts using Expanded.
+- Debugging with Flutter Inspector.
+- Using Git and GitHub for version control.
+
+5. Conclusion
+
+Overall, Lab 2 was a valuable learning experience. I successfully completed the practical Flutter exercises and improved my programming, debugging, and problem-solving skills. Despite the difficulties encountered, I gained more confidence in developing Flutter applications.
